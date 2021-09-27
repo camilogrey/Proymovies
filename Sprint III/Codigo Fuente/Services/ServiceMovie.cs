@@ -1,0 +1,28 @@
+/* estas 2 impodrtaciones de la interfaz tambine las llamamos en esta clase */
+using System;
+using Proypelis.Shared.Entity;
+using System.Collections.Generic;
+
+namespace Proypelis.Client.Services
+{
+    /* Aca la clase ya esta implementado la interfaz */
+    public class ServiceMovie: IServiceMovie
+    {
+        public List<Movie> GetMovies(){
+            return new List<Movie>{
+                new Movie(){MovieName="El Caballero Oscuro",MovieImage="Images/Action_1.jpg",Gender="Acción",Year="2008",Director="Christopher Nolan",Score=100,Description="Batman/Bruce Wayne regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman se propone destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra su eficacia, pero, de repente, aparece Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos"},
+                new Movie(){MovieName="Origen",MovieImage="Images/Action_2.jpg",Gender="Acción",Year="2010",Director="Chirstopher Nolan",Score=100,Description="Dom Cobb es un ladrón hábil, el mejor de todos, especializado en el peligroso arte de extracción: el robo de secretos valiosos desde las profundidades del subconsciente durante el estado de sueño cuando la mente está más vulnerable. Esta habilidad excepcional de Cobb le ha hecho un jugador codiciado en el traicionero nuevo mundo de espionaje corporativo, pero al mismo tiempo, le ha convertido en un fugitivo internacional y ha tenido que sacrificar todo que le importaba. Ahora a Cobb se le ofrece una oportunidad para redimirse. Con un último trabajo podría recuperar su vida anterior, pero solamente si logra lo imposible"},
+                new Movie(){MovieName="The Mountain II",MovieImage="Images/Action_3.jpg",Gender="Acción",Year="2016",Director="Alper Çağlar",Score=100,Description="Una zona de guerra desolada donde el eco de los gritos de los inocentes estan en el limite entre el desastre y el valor"},
+                new Movie(){MovieName="Matrix",MovieImage="Images/Action_4.jpg",Gender="Acción",Year="1999",Director="Brothers Wachowski", Score=100,Description="Thomas Anderson lleva una doble vida: por el día es programador en una importante empresa de software, y por la noche un hacker informático llamado Neo. Su vida no volverá a ser igual cuando unos misteriosos personajes le inviten a descubrir la respuesta a la pregunta que no le deja dormir: ¿qué es Matrix?"},
+                new Movie(){MovieName="Harakiri",MovieImage="Images/Action_5.jpg",Gender="Acción",Year="1962",Director="Masaki Kobayashi",Score=100,Description="Un samurái pide permiso para practicarse el Seppuku (o Harakiri), ceremonia durante la cual se quitará la vida abriéndose el estómago al tiempo que otro samurái lo decapitará. Solicita también poder contar la historia que le ha llevado a tomar tan trágica decisión"},
+                new Movie(){MovieName="El Padrino",MovieImage="Images/Drama_1.jpg",Gender="Drama",Year="1972",Director="Francis Ford Coppola",Score=100,Description="Don Vito Corleone, conocido dentro de los círculos del hampa como 'El Padrino', es el patriarca de una de las cinco familias que ejercen el mando de la Cosa Nostra en Nueva York en los años ccuarenta. Don Corleone tiene cuatro hijos: una chica, Connie, y tres vaones; Sonny, Michael y Fredo. Cuando el Padrino reclina intervenir en el negocio de estupefacientes, empieza una cruenta lucha de violentos episodios entre las distintas familias del crimen organizado"},
+                new Movie(){MovieName="Boogie Nights",MovieImage="Images/Drama_2.jpg",Gender="Drama",Year="1997",Director="Paul Thomas Anderson",Score=100,Description="A los 17 años, un joven sexualmente bien dotado (Mark Wahlberg) es descubierto por un director veterano (Burt Reynolds), que lo transforma en una celebridad de la subcultura del mundo del porno en pleno apogeo de los 70. Sin embargo, la fama repentina puede pasar factura"},
+                new Movie(){MovieName="la Ley del Silencio",MovieImage="Images/Drama_3.jpg",Gender="Drama",Year="1954",Director="Elia Kazan",Score=100,Description="El exboxeador Terry Malloy podría haber sido un serio aspirante al título, pero se ve obligado a ganarse la vida trabajando para Johnny Friendly, el jefe de la conflictiva banda de gánsteres de la ciudad. Cuando dos de los matones de Friendly asesinan brutalmente a un hombre, Terry comienza a sentirse culpable con la vida que lleva, iniciando una peligrosa lucha para derrocar el imperio del hampa"},
+                new Movie(){MovieName="12 Hombres sin Piedad",MovieImage="Images/Drama_4.jpg",Gender="Drama",Year="1957",Director="Reginald Rose",Score=100,Description="Tras escuchar todos los testimonios y valorar las pruebas presentadas, un jurado popular compuesto por doce hombres tiene que decidir, por unanimidad, si absuelve o condena a muerte a un joven acusado de haber matado a su padre. Al principio, once están completamente convencidos de su culpabilidad y se inclinan por la condena, pero el que discrepa empieza a plantear dudas razonables que, poco a poco, van resquebrajando la inicial seguridad de los demás. Alabadísimo debut cinematográfico de Sidney Lumet"},
+                new Movie(){MovieName="Casablanca",MovieImage="Images/Drama_5.jpg",Gender="Drama",Year="1942",Director="Michael Curtiz",Score=100,Description="Cuando Ilsa se ofrece a quedarse a cambio de un visado para sacar a Laszlo del país, Rick deberá elegir entre su propia felicidad o el idealismo que rigió su vida en el pasado"},
+            };
+         }                   
+    }
+}
+/* esta es una clase para implementar los metodos */
+/* Cuando hereda entre clases: EXTENT, cuanod hereda de una Interfaz es IMPLEMENTAR  */

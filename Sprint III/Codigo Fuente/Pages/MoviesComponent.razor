@@ -1,0 +1,72 @@
+<div class="jumbotron">
+
+<h6> Hola </h6>
+@foreach (var movie in Movies)
+{
+    <div class="card-deck mb-3">
+        @* CARD 1 *@
+        <div class="card ">
+            <img class="card-imgtop" src="/Images/Action_1.jpg" alt="Card image cap" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><em>@MovieName</em></h5>
+                <small class="text-muted">@Year</small>
+                <small class="text-muted">/</small>
+                <small class="text-muted">@Gender</small><br>
+                <small class="text-muted">@Director</small>
+            </div>
+                <a href="#" class="btn btn-primary">Sinopsis</a>
+            </div>
+        @* CARD 2 *@
+        <div class="card ">
+            <img class="card-imgtop" src="/Images/Action_2.jpg" alt="Card image cap" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><em>@MovieName</em></h5>
+                <small class="text-muted">@Year</small>
+                <small class="text-muted">/</small>
+                <small class="text-muted">@Gender</small><br>
+                <small class="text-muted">@Director</small>
+            </div>
+                <a href="#" class="btn btn-primary">Sinopsis</a>
+            </div>        
+        @* CARD 3 *@
+                <div class="card ">
+            <img class="card-imgtop" src="/Images/Action_3.jpg" alt="Card image cap" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><em>@MovieName</em></h5>
+                <small class="text-muted">@Year</small>
+                <small class="text-muted">/</small>
+                <small class="text-muted">@Gender</small><br>
+                <small class="text-muted">@Director</small>
+            </div>
+                <a href="#" class="btn btn-primary">Sinopsis</a>
+            </div>
+        @* CARD 4 *@
+                <div class="card ">
+            <img class="card-imgtop" src="/Images/Action_4.jpg" alt="Card image cap" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><em>@MovieName</em></h5>
+                <small class="text-muted">@Year</small>
+                <small class="text-muted">/</small>
+                <small class="text-muted">@Gender</small><br>
+                <small class="text-muted">@Director</small>
+            </div>
+                <a href="#" class="btn btn-primary">Sinopsis</a>
+            </div>
+        @* CARD 5 *@
+        <div class="card ">
+            <img class="card-imgtop" src="/Images/Action_5.jpg" alt="Card image cap" height="250">
+            <div class="card-body">
+                <h5 class="card-title"><em>@MovieName</em></h5>
+                <small class="text-muted">@Year</small>
+                <small class="text-muted">/</small>
+                <small class="text-muted">@Gender</small><br>
+                <small class="text-muted">@Director</small>
+            </div>
+                <a href="#" class="btn btn-primary">Sinopsis</a>
+            </div> 
+    </div>
+}
+@code{
+    [Parameter] public List<Movie> Movies {get;set;}
+}
+</div>  
